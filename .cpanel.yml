@@ -1,4 +1,4 @@
 deployment:
   tasks:
     - export DEPLOYPATH=/home/littlebr/public_html/
-    - /bin/cp -R * $DEPLOYPATH
+    - /bin/cp -r * $DEPLOYPATH
