@@ -1,7 +1,33 @@
+.banner {
+  background-color: #fff;
+}
+
 .banner .nav li {
   @extend .nav-item;
 }
 
+.banner .nav .menu-item {
+  background-image: url("/wp-content/themes/littlebritchestheatre/resources/assets/images/navbarpaint.png");
+  background-size: 100px;
+  background-repeat: no-repeat;
+  max-width: 135px;
+  background-position-x: center;
+  width: 108px;
+  max-height: 59px;
+  vertical-align: middle;
+}
+
 .banner .nav a {
-  @extend .nav-link;
+  display: flex;
+  padding: 10px;
+  color: #fff;
+  text-shadow: #000 -2px 3px 2px;
+  text-transform: uppercase;
+  font-size: 14px;
+  text-align: center;
+  line-height: 19px;
+  justify-content: center;
+  align-items: center;
+  height: 57px;
+  font-weight: 500;
 }

@@ -1,6 +1,11 @@
 {
+  "images/bg.jpg": "images/bg_774a3a87.jpg",
+  "images/blogimage.png": "images/blogimage_86e30923.png",
+  "images/header-banner.jpg": "images/header-banner_8ad0650e.jpg",
   "images/icon.png": "images/icon_986cbfc0.png",
-  "scripts/customizer.js": "scripts/customizer_b6e23ae7.js",
-  "styles/main.css": "styles/main_b6e23ae7.css",
-  "scripts/main.js": "scripts/main_b6e23ae7.js"
+  "images/logo-header-346x275.png": "images/logo-header-346x275_3f8ec059.png",
+  "images/navbarpaint.png": "images/navbarpaint_ad688337.png",
+  "scripts/customizer.js": "scripts/customizer_4192250c.js",
+  "styles/main.css": "styles/main_4192250c.css",
+  "scripts/main.js": "scripts/main_4192250c.js"
 }

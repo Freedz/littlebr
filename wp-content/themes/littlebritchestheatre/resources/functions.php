@@ -90,3 +90,37 @@ Container::getInstance()
             'view' => require dirname(__DIR__).'/config/view.php',
         ]);
     }, true);
+
+add_action( 'widgets_init', 'my_register_sidebars' );
+function my_register_sidebars() {
+    /* Register the 'primary' sidebar. */
+    register_sidebar(
+        array(
+            'id'            => 'homeblog',
+            'name'          => __( 'Home blog' ),
+            'description'   => __( 'For homepage blog area' ),
+            'before_widget' => '<div id="%1$s" class="container widget %2$s blogcontent">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<div class="blogtitle"><h5 class="widget-title">',
+            'after_title'   => '</h5></div>',
+        )
+    );
+    /* Repeat register_sidebar() code for additional sidebars. */
+}
+
+add_action( 'widgets_init', 'my_register_sidebars_2' );
+function my_register_sidebars_2() {
+    /* Register the 'primary' sidebar. */
+    register_sidebar(
+        array(
+            'id'            => 'homewhatson',
+            'name'          => __( "Home What's on" ),
+            'description'   => __( 'For homepage whats on area' ),
+            'before_widget' => '<div id="%1$s" class="container widget %2$s whatsoncontent">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<div class="blogtitle"><h5 class="widget-title">',
+            'after_title'   => '</h5></div>',
+        )
+    );
+    /* Repeat register_sidebar() code for additional sidebars. */
+}

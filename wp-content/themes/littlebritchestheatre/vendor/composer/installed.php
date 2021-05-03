@@ -6,7 +6,7 @@
     'aliases' => 
     array (
     ),
-    'reference' => '87a4f682fc7455ed20bfce9b1ee1f11aed38e4e7',
+    'reference' => '2bbec160ff95ef15d6beebdcff07a85da072627e',
     'name' => 'roots/sage',
   ),
   'versions' => 
@@ -153,7 +153,7 @@
       'aliases' => 
       array (
       ),
-      'reference' => '87a4f682fc7455ed20bfce9b1ee1f11aed38e4e7',
+      'reference' => '2bbec160ff95ef15d6beebdcff07a85da072627e',
     ),
     'roots/sage-lib' => 
     array (

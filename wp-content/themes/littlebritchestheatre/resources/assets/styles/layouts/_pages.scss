@@ -395,3 +395,136 @@
     fill: #c30d14;
   }
 }
+
+.page-banner {
+  background-image: url("/wp-content/themes/littlebritchestheatre/resources/assets/images/header-banner.jpg");
+  height: 500px;
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+}
+
+.page-bloghome {
+  background-color: #ff618f;
+  position: relative;
+
+  .blogtitle {
+    background-image: url("/wp-content/themes/littlebritchestheatre/resources/assets/images/blogimage.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #fff;
+    padding: 8px;
+
+    h5 {
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+
+  .blogcontent {
+    padding: 20px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+      margin-top: 40px;
+
+      li {
+        list-style: none;
+        float: left;
+        width: 48%;
+        padding: 20px;
+        background: #cc215b;
+        margin: 10px;
+        color: #fff;
+        text-align: justify;
+
+        img {
+          float: left;
+          margin: 10px;
+        }
+      }
+    }
+  }
+}
+
+.page-homewhatson {
+  background-color: #fff;
+  position: relative;
+
+  .blogtitle {
+    background-color: #fff;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 200px;
+    height: 40px;
+    position: absolute;
+    top: -7px;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: #c06;
+    padding: 8px;
+
+    h5 {
+      text-transform: uppercase;
+      font-size: 14px;
+    }
+  }
+
+  .whatsoncontent {
+    padding: 20px;
+
+    ul {
+      margin: 0;
+      padding: 0;
+
+      li {
+        list-style: none;
+        float: left;
+        width: 48%;
+        padding: 20px;
+        background: #cc215b;
+        margin: 10px;
+        color: #fff;
+        text-align: justify;
+
+        img {
+          float: left;
+          margin: 10px;
+        }
+      }
+    }
+
+    p.cantwaitp {
+      text-align: center;
+      color: #c06;
+      font-size: 20px;
+      padding: 5px;
+    }
+
+    h4 {
+      text-align: center;
+      color: #c06;
+      padding: 10px;
+    }
+
+    p.content {
+      text-align: justify;
+      color: #c06;
+      font-size: 18px;
+    }
+
+    .more {
+      background-color: #cc215b;
+      color: #fff;
+      width: 150px;
+    }
+  }
+}
