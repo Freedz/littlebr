@@ -1,11 +1,16 @@
 {
   "images/bg.jpg": "images/bg_774a3a87.jpg",
   "images/blogimage.png": "images/blogimage_86e30923.png",
+  "images/blogimagecat.png": "images/blogimagecat_1e7575bf.png",
+  "images/email.png": "images/email_12896a26.png",
   "images/header-banner.jpg": "images/header-banner_8ad0650e.jpg",
   "images/icon.png": "images/icon_986cbfc0.png",
   "images/logo-header-346x275.png": "images/logo-header-346x275_3f8ec059.png",
   "images/navbarpaint.png": "images/navbarpaint_ad688337.png",
-  "scripts/customizer.js": "scripts/customizer_4192250c.js",
-  "styles/main.css": "styles/main_4192250c.css",
-  "scripts/main.js": "scripts/main_4192250c.js"
+  "images/newsletter.png": "images/newsletter_9afd0a63.png",
+  "images/tel.png": "images/tel_1813b73e.png",
+  "images/whatonbg.png": "images/whatonbg_2cdcaa01.png",
+  "scripts/customizer.js": "scripts/customizer_ff8ed8d3.js",
+  "styles/main.css": "styles/main_ff8ed8d3.css",
+  "scripts/main.js": "scripts/main_ff8ed8d3.js"
 }

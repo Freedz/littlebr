@@ -124,3 +124,37 @@ function my_register_sidebars_2() {
     );
     /* Repeat register_sidebar() code for additional sidebars. */
 }
+
+add_action( 'widgets_init', 'my_register_sidebars_3' );
+function my_register_sidebars_3() {
+    /* Register the 'primary' sidebar. */
+    register_sidebar(
+        array(
+            'id'            => 'homeblogcat',
+            'name'          => __( "Blog" ),
+            'description'   => __( 'For homepage blog area' ),
+            'before_widget' => '<div id="%1$s" class="container widget %2$s blogcatcontent">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<div class="blogtitle"><h5 class="widget-title">',
+            'after_title'   => '</h5></div>',
+        )
+    );
+    /* Repeat register_sidebar() code for additional sidebars. */
+}
+
+add_action( 'widgets_init', 'my_register_sidebars_4' );
+function my_register_sidebars_4() {
+    /* Register the 'primary' sidebar. */
+    register_sidebar(
+        array(
+            'id'            => 'newsletter',
+            'name'          => __( "Get in touch" ),
+            'description'   => __( 'For newsletter area' ),
+            'before_widget' => '<div id="%1$s" class="container widget %2$s newslettercontent">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<div class="newslettertitle"><h5 class="widget-title">',
+            'after_title'   => '</h5></div>',
+        )
+    );
+    /* Repeat register_sidebar() code for additional sidebars. */
+}
