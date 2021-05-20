@@ -89,7 +89,7 @@ while ( have_posts() ):
   $lcp_display_output .= $this->get_custom_fields($post);
 
   //Post Thumbnail
-  $lcp_display_output .= $this->get_thumbnail($post);
+  $lcp_display_output .= $this->get_thumbnail($post, 'div', 'img-content');
 
    //Show the title and link to the post:
   $lcp_display_output .= $this->get_post_title($post, 'h4', 'lcp_title');

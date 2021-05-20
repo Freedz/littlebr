@@ -1,0 +1,123 @@
+// Extra small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .navbar-brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-bloghome .blogcontent ul li {
+    width: 95%;
+  }
+
+  .page-bloghome .blogcontent ul li img {
+    margin: 0 !important;
+    width: 100%;
+  }
+
+  .page-homeblogcat .blogcatcontent ul.lcp_catlist li {
+    width: 100%;
+  }
+
+  .page-homeblogcat .blogcatcontent ul.lcp_catlist li > div {
+    text-align: center;
+  }
+
+  .page-homeblogcat .blogcatcontent ul.lcp_catlist li a > img {
+    width: 100%;
+  }
+
+  .lcp_excerpt {
+    text-align: justify !important;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .navbar-brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .page-bloghome .blogcontent ul li {
+    width: 90%;
+  }
+
+  .page-bloghome .blogcontent ul li img {
+    margin: 0 !important;
+    width: 100%;
+  }
+
+  .page-homeblogcat .blogcatcontent ul.lcp_catlist li {
+    width: 100%;
+  }
+
+  .page-homeblogcat .blogcatcontent ul.lcp_catlist li > div {
+    text-align: center;
+  }
+
+  .lcp_excerpt {
+    text-align: justify !important;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .navbar-brand {
+    width: 100%;
+    text-align: center;
+  }
+
+  .banner .nav .menu-item {
+    width: 98px;
+  }
+
+  .page-bloghome .blogcontent ul li {
+    width: 95%;
+  }
+
+  .page-homeblogcat .blogcatcontent ul.lcp_catlist li {
+    width: 50%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .page-homeblogcat .blogcatcontent ul.lcp_catlist li > div {
+    text-align: center;
+  }
+
+  .page-homeblogcat .blogcatcontent ul.lcp_catlist li a > img {
+    width: 100%;
+  }
+
+  .lcp_excerpt {
+    text-align: justify !important;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .page-bloghome .blogcontent ul li {
+    width: 47%;
+  }
+
+  .page-homeblogcat .blogcatcontent ul.lcp_catlist li {
+    width: 33%;
+    padding: 10px;
+    margin: 0;
+  }
+
+  .page-homeblogcat .blogcatcontent ul.lcp_catlist li > div {
+    text-align: center;
+  }
+
+  .page-homeblogcat .blogcatcontent ul.lcp_catlist li a > img {
+    width: 100%;
+  }
+
+  .lcp_excerpt {
+    text-align: justify !important;
+  }
+}
+
+// Extra large devices (large desktops, 1200px and up)
+//@media (min-width: 1200px) { ... }

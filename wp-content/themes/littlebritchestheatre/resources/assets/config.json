@@ -9,7 +9,7 @@
     ]
   },
   "publicPath": "/wp-content/themes/littlebritchestheatre",
-  "devUrl": "http://littlebr.test",
+  "devUrl": "http://testing.littlebritchestheatre.com",
   "proxyUrl": "http://localhost:3000",
   "cacheBusting": "[name]_[hash:8]",
   "watch": [
