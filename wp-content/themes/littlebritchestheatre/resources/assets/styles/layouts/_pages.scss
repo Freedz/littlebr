@@ -253,6 +253,8 @@
       text-align: center;
       margin-top: 30px;
       margin-bottom: 50px;
+      font-family: "Cinzel Decorative", cursive;
+      font-weight: 300;
     }
 
     .mc4wp-form-fields h6 {
@@ -352,5 +354,84 @@
       padding: 20px;
       padding-bottom: 6px;
     }
+  }
+}
+
+.page-template-default.page {
+  background-image: url("/wp-content/themes/littlebritchestheatre/resources/assets/images/bg2.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+
+  .content-area {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    font-family: "Indie Flower", cursive;
+    font-weight: 300;
+    text-align: center;
+    font-size: 20px;
+
+    .main-mesg {
+      text-shadow: black 0 0 4px;
+      margin-bottom: 50px;
+    }
+
+    .sub-mesg {
+      text-shadow: gray 0 0 4px;
+      margin-bottom: 50px;
+    }
+
+    h1.space-body-voice {
+      color: #f9c;
+      text-shadow: #c06 0 0 3px;
+    }
+
+    h4.subtitle {
+      text-align: left;
+      color: #c06;
+    }
+
+    strong {
+      color: #c06;
+    }
+
+    p {
+      text-align: justify;
+    }
+
+    .contact-card {
+      background-color: #fef1f6;
+      padding: 25px;
+      color: #c06;
+      font-family: "Source Sans Pro", sans-serif;
+      margin-bottom: 40px;
+      box-shadow: #c06 0 0 3px;
+
+      h4 {
+        font-family: "Cinzel Decorative", cursive;
+        text-align: left;
+        font-size: 20px;
+      }
+
+      h6 {
+        text-align: left;
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 15px;
+        margin-bottom: 14px;
+      }
+    }
+  }
+}
+
+.page-header {
+  h1 {
+    font-family: "Indie Flower", cursive;
+    font-weight: 300;
+    text-align: center;
+    padding: 30px;
+    color: #f69;
+    text-shadow: #f69 0 0 4px;
   }
 }

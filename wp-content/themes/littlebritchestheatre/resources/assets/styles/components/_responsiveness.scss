@@ -29,6 +29,11 @@
   .lcp_excerpt {
     text-align: justify !important;
   }
+
+  .page-template-default.page {
+    background-size: 45%;
+    background-repeat: repeat-y;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -57,6 +62,11 @@
 
   .lcp_excerpt {
     text-align: justify !important;
+  }
+
+  .page-template-default.page {
+    background-size: 45%;
+    background-repeat: repeat-y;
   }
 }
 
@@ -92,6 +102,11 @@
   .lcp_excerpt {
     text-align: justify !important;
   }
+
+  .page-template-default.page {
+    background-size: 45%;
+    background-repeat: repeat-y;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -116,6 +131,11 @@
 
   .lcp_excerpt {
     text-align: justify !important;
+  }
+
+  .page-template-default.page {
+    background-size: 45%;
+    background-repeat: repeat-y;
   }
 }
 
