@@ -435,3 +435,51 @@
     text-shadow: #f69 0 0 4px;
   }
 }
+
+#wpcf7-f95-p27-o1 .wpcf7-email,
+#wpcf7-f95-p27-o1 .wpcf7-text,
+#wpcf7-f95-p27-o1 .wpcf7-textarea {
+  border: none;
+  background-color: #fff;
+  color: #f69 !important;
+  margin: 3px;
+  border-radius: 3px;
+  padding: 5px 10px;
+  width: 36%;
+}
+
+#wpcf7-f95-p27-o1 .wpcf7-textarea {
+  width: 73%;
+}
+
+#wpcf7-f95-p27-o1 .wpcf7-email::placeholder,
+#wpcf7-f95-p27-o1 .wpcf7-text::placeholder,
+#wpcf7-f95-p27-o1 .wpcf7-textarea::placeholder {
+  color: #f69 !important;
+}
+
+#wpcf7-f95-p27-o1 .wpcf7-submit {
+  background-color: #cc215b;
+  color: #fff;
+  width: 150px;
+  border-radius: 5px;
+  border: none;
+  line-height: 2;
+  margin: 10px;
+}
+
+.page-template-default.contact {
+  background-position: 57% 12%;
+  background-image: url(http://localhost:3000/wp-content/themes/littlebritchestheatre/resources/assets/images/contact-us-bg.jpg) !important;
+  background-size: 50% !important;
+  background-color: #ffecf2;
+  background-repeat: no-repeat !important;
+}
+
+.page-template-default.our-team {
+  background-color: #ffecf2;
+}
+
+img.alignright.line-woman {
+  width: 80%;
+}

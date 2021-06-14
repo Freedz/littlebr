@@ -34,6 +34,23 @@
     background-size: 45%;
     background-repeat: repeat-y;
   }
+
+  #wpcf7-f95-p27-o1 .wpcf7-email,
+  #wpcf7-f95-p27-o1 .wpcf7-text {
+    width: 98% !important;
+  }
+
+  #wpcf7-f95-p27-o1 .wpcf7-textarea {
+    width: 98% !important;
+  }
+
+  #wpcf7-f95-p27-o1 .wpcf7-submit {
+    width: 100% !important;
+  }
+
+  .page-template-default.contact {
+    background-position: 89% 19% !important;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -67,6 +84,19 @@
   .page-template-default.page {
     background-size: 45%;
     background-repeat: repeat-y;
+  }
+
+  #wpcf7-f95-p27-o1 .wpcf7-email,
+  #wpcf7-f95-p27-o1 .wpcf7-text {
+    width: 98% !important;
+  }
+
+  #wpcf7-f95-p27-o1 .wpcf7-textarea {
+    width: 98% !important;
+  }
+
+  #wpcf7-f95-p27-o1 .wpcf7-submit {
+    width: 100% !important;
   }
 }
 
@@ -107,6 +137,23 @@
     background-size: 45%;
     background-repeat: repeat-y;
   }
+
+  #wpcf7-f95-p27-o1 .wpcf7-email,
+  #wpcf7-f95-p27-o1 .wpcf7-text {
+    width: 98% !important;
+  }
+
+  #wpcf7-f95-p27-o1 .wpcf7-textarea {
+    width: 98% !important;
+  }
+
+  #wpcf7-f95-p27-o1 .wpcf7-submit {
+    width: 100% !important;
+  }
+
+  .page-template-default.contact {
+    background-position: 86% 11% !important;
+  }
 }
 
 // Large devices (desktops, 992px and up)
@@ -137,7 +184,17 @@
     background-size: 45%;
     background-repeat: repeat-y;
   }
+
+  .page-template-default.contact {
+    background-position: 73% 33% !important;
+  }
 }
 
 // Extra large devices (large desktops, 1200px and up)
 //@media (min-width: 1200px) { ... }
+
+@media (min-width: 1200px) and (max-width: 1440px) {
+  .page-template-default.contact {
+    background-position: 66% 27% !important;
+  }
+}
