@@ -2,7 +2,7 @@
 
 @section('content')
   @include('partials.page-header')
-  <div class="content-area col-md-8 col-xl-6">
+
   @if (!have_posts())
     <div class="alert alert-warning">
       {{ __('Sorry, no results were found.', 'sage') }}
@@ -15,7 +15,4 @@
   @endwhile
 
   {!! get_the_posts_navigation() !!}
-  </div>
-
-  @include('partials.page-footer')
 @endsection

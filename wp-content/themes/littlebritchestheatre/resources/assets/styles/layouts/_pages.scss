@@ -483,3 +483,120 @@
 img.alignright.line-woman {
   width: 80%;
 }
+
+.index-data.home-data {
+  background-image: url("/wp-content/themes/littlebritchestheatre/resources/assets/images/bg2.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-color: #ffecf2;
+
+  .content-area {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    font-family: "Indie Flower", cursive;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 20px;
+
+    .main-mesg {
+      text-shadow: black 0 0 4px;
+      margin-bottom: 50px;
+    }
+
+    .sub-mesg {
+      text-shadow: gray 0 0 4px;
+      margin-bottom: 50px;
+    }
+
+    h1.space-body-voice {
+      color: #f9c;
+      text-shadow: #c06 0 0 3px;
+    }
+
+    h4.subtitle {
+      text-align: left;
+      color: #c06;
+    }
+
+    strong {
+      color: #c06;
+    }
+
+    .blogpost {
+      background-color: #fef1f6;
+      padding: 25px;
+      font-family: "Source Sans Pro", sans-serif;
+      margin-bottom: 40px;
+      box-shadow: #c06 0 0 3px;
+
+      a {
+        color: #cc215b;
+      }
+
+      a:hover {
+        color: #cc215b;
+        text-decoration: none;
+      }
+
+      h4 {
+        font-family: "Cinzel Decorative", cursive;
+        text-align: left;
+        font-size: 25px;
+        margin-bottom: 0;
+      }
+
+      time,
+      .leave-comment {
+        font-size: 16px;
+      }
+
+      h6 {
+        text-align: left;
+        font-size: 18px;
+      }
+
+      p {
+        font-size: 15px;
+        margin-bottom: 14px;
+      }
+
+      .spacer {
+        margin: 10px;
+      }
+
+      a.moretag {
+        text-align: right;
+        position: absolute;
+        right: 40px;
+        bottom: 0;
+      }
+    }
+  }
+}
+
+.single {
+  background-image: url("/wp-content/themes/littlebritchestheatre/resources/assets/images/bg2.png");
+  background-size: 40%;
+  background-repeat: no-repeat;
+  background-color: #ffecf2;
+
+  .post-content-area {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    font-family: "Indie Flower", cursive;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 20px;
+
+    #reply-title,
+    #commentform label {
+      color: #cc215b;
+    }
+
+    .the-post-thumbnail {
+      width: 100%;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+  }
+}

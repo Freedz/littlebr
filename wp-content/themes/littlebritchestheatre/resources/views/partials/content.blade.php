@@ -1,9 +1,25 @@
-<article @php post_class() @endphp>
-  <header>
-    <h2 class="entry-title"><a href="{{ get_permalink() }}">{!! get_the_title() !!}</a></h2>
-    @include('partials/entry-meta')
-  </header>
-  <div class="entry-summary">
-    @php the_excerpt() @endphp
+<div class="container blogpost">
+  <div class="row">
+    <div class="col-md-4">
+        @php
+          if ( has_post_thumbnail() ) {
+              the_post_thumbnail('medium');
+          }
+          else {
+              echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/images/default-blog-image.png" />';
+          }
+        @endphp
+    </div>
+    <div class="col-md-8">
+      <article @php post_class() @endphp>
+        <header>
+          <h4 class="entry-title"><a href="{{ get_permalink() }}">{!! get_the_title() !!}</a></h4>
+          @include('partials/entry-meta')
+        </header>
+        <div class="entry-summary">
+          @php the_excerpt() @endphp
+        </div>
+      </article>
+    </div>
   </div>
-</article>
+</div>

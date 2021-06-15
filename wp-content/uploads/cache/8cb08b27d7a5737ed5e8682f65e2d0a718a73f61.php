@@ -1,6 +1,6 @@
 <?php $__env->startSection('content'); ?>
   <?php echo $__env->make('partials.page-header', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
-
+  <div class="content-area col-md-8 col-xl-6">
   <?php if(!have_posts()): ?>
     <div class="alert alert-warning">
       <?php echo e(__('Sorry, no results were found.', 'sage')); ?>
@@ -16,6 +16,9 @@
 
   <?php echo get_the_posts_navigation(); ?>
 
+  </div>
+
+  <?php echo $__env->make('partials.page-footer', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts.app', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>
