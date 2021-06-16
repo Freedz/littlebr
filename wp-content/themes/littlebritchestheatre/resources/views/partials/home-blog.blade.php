@@ -1,5 +1,5 @@
 <?php if ( is_active_sidebar( 'homeblog' ) ) : ?>
-    <div class="page-bloghome">
+    <div class="page-bloghome come-in">
         <?php dynamic_sidebar( 'homeblog' ); ?>
         <div style="clear:both"></div>
     </div>

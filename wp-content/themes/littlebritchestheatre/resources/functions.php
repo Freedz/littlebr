@@ -164,3 +164,22 @@ function new_excerpt_more($more) {
     return '<a class="moretag" href="'. get_permalink($post->ID) . '"> Read the full post >></a>';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
+
+add_action( 'widgets_init', 'my_register_sidebars_5' );
+function my_register_sidebars_5() {
+    /* Register the 'primary' sidebar. */
+    register_sidebar(
+        array(
+            'id'            => 'homebanner',
+            'name'          => __( 'Home Banner' ),
+            'description'   => __( 'For homepage banner area' ),
+            'before_widget' => '<div id="%1$s" class="container widget %2$s bannercontent">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<div class="blogtitle"><h5 class="widget-title">',
+            'after_title'   => '</h5></div>',
+        )
+    );
+    /* Repeat register_sidebar() code for additional sidebars. */
+}
+
+add_filter( 'widget_text', 'do_shortcode' );

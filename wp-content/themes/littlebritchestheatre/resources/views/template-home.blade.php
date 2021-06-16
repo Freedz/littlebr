@@ -8,6 +8,5 @@
   @while(have_posts()) @php the_post() @endphp
     @include('partials.home-banner')
     @include('partials.home-blog')
-    @include('partials.content-page')
   @endwhile
 @endsection

@@ -1,7 +1,7 @@
 <div class="post-content-area col-md-8 col-xl-6">
     
     <div class="the-post-thumbnail">
-      <?php the_post_thumbnail(); ?>
+      <?php the_post_thumbnail('medium', ['class' => 'img-responsive responsive-full']); ?>
     </div>
     <?php 
     the_content() 

@@ -3,7 +3,7 @@
     <div class="col-md-4">
         <?php
           if ( has_post_thumbnail() ) {
-              the_post_thumbnail('medium');
+              the_post_thumbnail('medium', ['class' => 'img-responsive responsive-full']);
           }
           else {
               echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/images/default-blog-image.png" />';
