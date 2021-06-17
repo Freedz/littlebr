@@ -55,6 +55,11 @@
   .page-banner {
     height: 300px;
   }
+
+  .index-data.home-data .content-area .blogpost a.moretag {
+    right: 18px;
+    bottom: -15px;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -105,6 +110,11 @@
 
   .page-banner {
     height: 300px;
+  }
+
+  .index-data.home-data .content-area .blogpost a.moretag {
+    right: 18px;
+    bottom: -15px;
   }
 }
 
@@ -161,6 +171,11 @@
 
   .page-template-default.contact {
     background-image: none !important;
+  }
+
+  .index-data.home-data .content-area .blogpost a.moretag {
+    right: 18px;
+    bottom: -15px;
   }
 }
 

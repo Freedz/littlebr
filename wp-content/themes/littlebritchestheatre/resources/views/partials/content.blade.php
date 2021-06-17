@@ -6,7 +6,7 @@
               the_post_thumbnail('medium', ['class' => 'img-responsive responsive-full']);
           }
           else {
-              echo '<img src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/images/default-blog-image.png" />';
+              echo '<img class="img-responsive responsive-full wp-post-image" src="' . get_bloginfo( 'stylesheet_directory' ) . '/assets/images/default-blog-image.png" />';
           }
         @endphp
     </div>

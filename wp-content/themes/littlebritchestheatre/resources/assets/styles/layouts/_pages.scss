@@ -602,12 +602,12 @@ img.alignright.line-woman {
 }
 
 .come-in {
-  transform: translateY(150px);
-  animation: come-in 0.8s ease forwards;
+  transform: translateY(350px);
+  animation: come-in 1.3s ease forwards;
 }
 
 .come-in:nth-child(odd) {
-  animation-duration: 0.6s; /* So they look staggered */
+  animation-duration: 1s; /* So they look staggered */
 }
 
 //.already-visible {
