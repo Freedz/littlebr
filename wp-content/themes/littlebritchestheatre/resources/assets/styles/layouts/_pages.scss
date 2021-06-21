@@ -360,7 +360,7 @@
 .page-template-default.page {
   background-image: url("/wp-content/themes/littlebritchestheatre/resources/assets/images/bg2.png");
   background-size: 40%;
-  background-repeat: no-repeat;
+  background-repeat: repeat-y;
 
   .content-area {
     margin: 0 auto;
@@ -623,4 +623,87 @@ img.img-responsive.responsive-full.wp-post-image {
   width: 100% !important;
   margin-bottom: 20px;
   height: auto;
+}
+
+.page-template-template-whatson {
+  background-image: url("/wp-content/themes/littlebritchestheatre/resources/assets/images/bg2.png");
+  background-size: 40%;
+  background-repeat: repeat-y;
+  background-color: #ffecf2;
+
+  .whatson-content-area {
+    margin: 0 auto;
+    padding-bottom: 50px;
+    font-family: "Indie Flower", cursive;
+    font-weight: 300;
+    text-align: justify;
+    font-size: 20px;
+
+    ul.cattab {
+      margin: 0 auto;
+      padding: 0;
+      width: 100%;
+
+      .tabs {
+        list-style: none;
+        float: left;
+        width: 49%;
+        text-align: center;
+        border: 1px solid #cc215b;
+        color: #cc215b;
+        margin: 1px;
+
+        .production-tabs,
+        .event-tabs,
+        .production-tabs:hover,
+        .event-tabs:hover, {
+          color: #cc215b;
+        }
+      }
+    }
+
+    ul.post-lists {
+      margin: 0 auto;
+      padding: 0;
+      width: 70%;
+      margin-top: 40px;
+
+      .Events,
+      .Production {
+        list-style: none;
+        border: 1px solid #cc215b;
+        margin: 10px;
+        padding: 20px;
+        box-shadow: 0 0 21px #cc215b;
+        background: #ffecf2;
+        margin-bottom: 30px;
+
+        .contentp {
+          margin-bottom: 0;
+          color: #cc215b;
+        }
+
+        .contentpa,
+        .contentpa:hover {
+          color: #cc215b;
+        }
+
+        .btn.read-more {
+          background-color: #cc215b;
+          color: #fff;
+          width: 180px;
+          padding: 10px;
+        }
+      }
+    }
+
+    .page-numbers,
+    .page-numbers:hover {
+      color: #cc215b;
+    }
+
+    .current {
+      font-weight: bolder;
+    }
+  }
 }
