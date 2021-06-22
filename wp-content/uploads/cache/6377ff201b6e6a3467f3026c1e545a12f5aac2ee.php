@@ -39,8 +39,7 @@
                             ?>
                         </div>
                         <div class="col-md-7">
-                            <?php echo e(get_the_content()); ?>
-
+                            <?php echo apply_filters( 'the_content', get_the_content() ); ?>
                             <p class="text-center">
                                 <a href="<?php echo e(get_permalink()); ?>" class="btn btn-default more btn-lg">More</a>
                             </p>

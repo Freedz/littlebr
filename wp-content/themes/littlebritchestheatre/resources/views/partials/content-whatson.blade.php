@@ -10,7 +10,7 @@
             $cats = (isset($_GET['cat'] )) ? sanitize_text_field( $_GET['cat'] ) : "production,events";
             $args = array( 
                 'post_type' => 'post', 
-                'posts_per_page' => 1, 
+                'posts_per_page' => 10, 
                 'post_status' => 'publish', 
                 'category_name' => $cats,
                 'paged' => $paged);

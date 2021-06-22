@@ -39,7 +39,7 @@
                             @endphp
                         </div>
                         <div class="col-md-7">
-                            {{ get_the_content() }}
+                            @php echo apply_filters( 'the_content', get_the_content() ); @endphp
                             <p class="text-center">
                                 <a href="{{ get_permalink() }}" class="btn btn-default more btn-lg">More</a>
                             </p>
