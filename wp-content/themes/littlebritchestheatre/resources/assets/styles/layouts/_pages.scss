@@ -212,7 +212,7 @@
 
     .more {
       background-color: #cc215b;
-      color: #fff;
+      color: #fff !important;
       width: 150px;
     }
   }
@@ -598,6 +598,10 @@ img.alignright.line-woman {
       text-align: center;
       margin-bottom: 30px;
     }
+  }
+
+  .post-content-area img.size-full {
+    max-width: 100%;
   }
 }
 

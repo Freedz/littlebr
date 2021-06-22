@@ -107,7 +107,9 @@ while ( have_posts() ):
   $lcp_display_output .= $this->get_excerpt($post, 'div', 'lcp_excerpt');
 
   // Get Posts "More" link:
+  $lcp_display_output .= '<div class="text-center">';
   $lcp_display_output .= $this->get_posts_morelink($post);
+  $lcp_display_output .= '</div>';
 
   //Close li tag
   $lcp_display_output .= $this->close_inner_tag();

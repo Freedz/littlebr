@@ -38,6 +38,8 @@ class ListCategoryPostsWidget extends WP_Widget{
     $showcatlink = ($instance['show_catlink'] == 'on') ? 'yes' : 'no';
     $thumbnail = ($instance['thumbnail'] == 'on') ? 'yes' : 'no';
     $thumbnail_size = ($instance['thumbnail_size']) ? $instance['thumbnail_size'] : 'thumbnail';
+    $showpostmorelink = ($instance['posts_morelink']) ? $instance['posts_morelink'] : '';
+    $showpostmorelinkclass = ($instance['posts_morelink_class']) ? $instance['posts_morelink_class'] : '';
     $morelink = empty($instance['morelink']) ? ' ' : $instance['morelink'];
     if ( empty( $instance['tags_as_class'] ) ) {
       $instance['tags_as_class'] = 'no';
@@ -70,7 +72,9 @@ class ListCategoryPostsWidget extends WP_Widget{
       'pagination_next' => '>>',
       'pagination_prev' => '<<',
       'pagination' => $pagination,
-      'instance' => $this->id
+      'instance' => $this->id,
+      'posts_morelink' => $showpostmorelink,
+      'posts_morelink_class' => $showpostmorelinkclass
     );
     $atts = array_merge(ListCategoryPosts::default_params(), $atts);
 
@@ -133,6 +137,8 @@ class ListCategoryPostsWidget extends WP_Widget{
     $instance['tags_as_class'] = strip_tags($new_instance['tags_as_class']);
     $instance['template'] = strip_tags($new_instance['template']);
     $instance['pagination'] = strip_tags($new_instance['pagination']);
+    $instance['posts_morelink'] = strip_tags($new_instance['posts_morelink']);
+    $instance['posts_morelink_class'] = strip_tags($new_instance['posts_morelink_class']);
 
     return $instance;
   }

@@ -21,6 +21,8 @@
                     'thumbnail_size' =>'',
                     'offset'=>'',
                     'show_catlink'=>'',
+                    'posts_morelink' => '',
+                    'posts_morelink_class' => '',
                     'morelink' =>'',
                     'tags_as_class' => '',
                     'template' => '',
@@ -46,6 +48,8 @@
   $excerptsize = strip_tags($instance['excerpt_size']);
   $thumbnail = strip_tags($instance['thumbnail']);
   $thumbnail_size = strip_tags($instance['thumbnail_size']);
+  $postsmorelink = strip_tags($instance['posts_morelink']);
+  $postsmorelinkclass = strip_tags($instance['posts_morelink_class']);
   $morelink = strip_tags($instance['morelink']);
   $tags_as_class = strip_tags($instance['tags_as_class']);
   $template = strip_tags($instance['template']);
@@ -239,6 +243,24 @@
   <input class="widefat" id="<?php echo $this->get_field_id('excerpt_size'); ?>"
     name="<?php echo $this->get_field_name('excerpt_size'); ?>" type="text"
     value="<?php echo esc_attr($excerptsize); ?>" />
+</p>
+<p>
+  <label for="<?php echo $this->get_field_id('excerpt_size'); ?>">
+    <?php _e("Post More Link", 'list-category-posts')?>:
+  </label>
+  <br/>
+  <input class="widefat" id="<?php echo $this->get_field_id('posts_morelink'); ?>"
+    name="<?php echo $this->get_field_name('posts_morelink'); ?>" type="text"
+    value="<?php echo esc_attr($postsmorelink); ?>" />
+</p>
+<p>
+  <label for="<?php echo $this->get_field_id('posts_morelink_class'); ?>">
+    <?php _e("Post More Link Class", 'list-category-posts')?>:
+  </label>
+  <br/>
+  <input class="widefat" id="<?php echo $this->get_field_id('posts_morelink_class'); ?>"
+    name="<?php echo $this->get_field_name('posts_morelink_class'); ?>" type="text"
+    value="<?php echo esc_attr($postsmorelinkclass); ?>" />
 </p>
 <p>
   <label for="<?php echo $this->get_field_id('morelink'); ?>">

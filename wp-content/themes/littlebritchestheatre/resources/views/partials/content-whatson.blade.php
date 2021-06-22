@@ -7,11 +7,12 @@
     <div>
         @php
             $paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
+            $cats = (isset($_GET['cat'] )) ? sanitize_text_field( $_GET['cat'] ) : "production,events";
             $args = array( 
                 'post_type' => 'post', 
-                'posts_per_page' => 10, 
+                'posts_per_page' => 1, 
                 'post_status' => 'publish', 
-                'category_name' => 'production,events',
+                'category_name' => $cats,
                 'paged' => $paged);
             $the_query = new WP_Query( $args );
         @endphp
@@ -54,6 +55,10 @@
             ));
         @endphp
         </p>
+        @else
+            @php
+                wp_redirect( get_the_permalink() . '?cat=' . $cats); exit;
+            @endphp
         @endif
     </div>
 <div style="clear:both"></div>
@@ -65,12 +70,20 @@
             e.preventDefault();
             jQuery(".Events").fadeOut(1000);
             jQuery(".Production").fadeIn(1000);
+            const urlParams = new URLSearchParams(window.location.search);
+            urlParams.set('cat', 'production');
+            urlParams.delete('page');
+            window.location.search = urlParams;
         });
 
         jQuery(".event-tabs").click(function(e){
             e.preventDefault();
             jQuery(".Events").fadeIn(1000);
             jQuery(".Production").fadeOut(1000);
+            const urlParams = new URLSearchParams(window.location.search);
+            urlParams.set('cat', 'events');
+            urlParams.delete('page');
+            window.location.search = urlParams;
         });
     });
 </script>
