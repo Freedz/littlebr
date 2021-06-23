@@ -39,7 +39,17 @@
                             @endphp
                         </div>
                         <div class="col-md-7">
-                            @php echo apply_filters( 'the_content', get_the_content() ); @endphp
+                            @php
+
+                                $phrase = get_the_content();
+                                $len = 160;
+                                if (str_word_count($phrase) > $len) {
+                                    $keys = array_keys(str_word_count($phrase, 2));
+                                    $phrase = substr($phrase, 0, $keys[$len]);
+                                }
+
+                                echo $phrase . " ...";
+                            @endphp
                             <p class="text-center">
                                 <a href="{{ get_permalink() }}" class="btn btn-default more btn-lg">More</a>
                             </p>
