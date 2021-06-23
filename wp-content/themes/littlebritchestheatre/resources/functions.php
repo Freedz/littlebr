@@ -184,10 +184,10 @@ function my_register_sidebars_5() {
 
 add_filter( 'widget_text', 'do_shortcode' );
 
-function my_home_category( $query ) {
-    if ( $query->is_main_query() ) {
-        $query->set( 'cat', '3');
-    }
-}
-add_action( 'pre_get_posts', 'my_home_category' );
+// function my_home_category( $query ) {
+//     if ( $query->is_main_query() ) {
+//         $query->set( 'cat', '3');
+//     }
+// }
+// add_action( 'pre_get_posts', 'my_home_category' );
 
