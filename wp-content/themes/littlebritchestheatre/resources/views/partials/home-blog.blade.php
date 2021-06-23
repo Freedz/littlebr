@@ -48,7 +48,7 @@
                                     $phrase = substr($phrase, 0, $keys[$len]);
                                 }
 
-                                echo $phrase . " ...";
+                                echo force_balance_tags($phrase) . " ...";
                             @endphp
                             <p class="text-center">
                                 <a href="{{ get_permalink() }}" class="btn btn-default more btn-lg">More</a>
