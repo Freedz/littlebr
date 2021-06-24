@@ -1,11 +1,11 @@
 ##testing
-deployment:
-  tasks:
-    - export DEPLOYPATH=/home/littlebr/public_html/testing
-    - /bin/cp -r * $DEPLOYPATH
-
-##live
 # deployment:
 #   tasks:
-#     - export DEPLOYPATH=/home/littlebr/public_html
+#     - export DEPLOYPATH=/home/littlebr/public_html/testing
 #     - /bin/cp -r * $DEPLOYPATH
+
+##live
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home/littlebr/public_html
+    - /bin/cp -r * $DEPLOYPATH

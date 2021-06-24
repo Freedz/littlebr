@@ -1,6 +1,6 @@
 <div class="whatson-content-area col-md-8 col-xl-6">
     <ul class="cattab">
-        <li class="tabs"><a href="#" class="production-tabs">Production</a></li>
+        <li class="tabs"><a href="#" class="production-tabs">Productions</a></li>
         <li class="tabs"><a href="#" class="event-tabs">Events</a></li>
     </ul>
     <div style="clear: both"></div>
@@ -69,9 +69,9 @@
         jQuery(".production-tabs").click(function(e){
             e.preventDefault();
             jQuery(".Events").fadeOut(1000);
-            jQuery(".Production").fadeIn(1000);
+            jQuery(".Productions").fadeIn(1000);
             const urlParams = new URLSearchParams(window.location.search);
-            urlParams.set('cat', 'production');
+            urlParams.set('cat', 'productions');
             urlParams.delete('page');
             window.location.search = urlParams;
         });
@@ -79,7 +79,7 @@
         jQuery(".event-tabs").click(function(e){
             e.preventDefault();
             jQuery(".Events").fadeIn(1000);
-            jQuery(".Production").fadeOut(1000);
+            jQuery(".Productions").fadeOut(1000);
             const urlParams = new URLSearchParams(window.location.search);
             urlParams.set('cat', 'events');
             urlParams.delete('page');
