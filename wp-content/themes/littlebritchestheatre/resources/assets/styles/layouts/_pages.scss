@@ -722,7 +722,8 @@ section#comments {
     padding: 10px;
     border-radius: 5px;
 
-    .comment-metadata a {
+    .comment-metadata a,
+    .reply a {
       color: #cc215b;
     }
   }
