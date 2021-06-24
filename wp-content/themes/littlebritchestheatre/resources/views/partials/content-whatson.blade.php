@@ -7,7 +7,7 @@
     <div>
         @php
             $paged = (get_query_var( 'paged' )) ? get_query_var( 'paged' ) : 1;
-            $cats = (isset($_GET['cat'] )) ? sanitize_text_field( $_GET['cat'] ) : "production,events";
+            $cats = (isset($_GET['cat'] )) ? sanitize_text_field( $_GET['cat'] ) : "productions,events";
             $args = array( 
                 'post_type' => 'post', 
                 'posts_per_page' => 10, 

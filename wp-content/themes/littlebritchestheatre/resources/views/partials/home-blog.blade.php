@@ -10,7 +10,7 @@
             'post_type' => 'post', 
             'posts_per_page' => 1, 
             'post_status' => 'publish', 
-            'category_name' => 'production');
+            'category_name' => 'productions');
         $the_query = new WP_Query( $args );
     @endphp
 

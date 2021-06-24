@@ -711,3 +711,25 @@ img.img-responsive.responsive-full.wp-post-image {
     }
   }
 }
+
+section#comments {
+  background: #fff;
+  border: 1px solid #cc215b;
+  padding: 20px;
+
+  li.comment {
+    background: #ffecf2;
+    padding: 10px;
+    border-radius: 5px;
+
+    .comment-metadata a {
+      color: #cc215b;
+    }
+  }
+
+  #submit {
+    background-color: #cc215b;
+    color: #fff;
+    border: none;
+  }
+}

@@ -10,7 +10,7 @@
             'post_type' => 'post', 
             'posts_per_page' => 1, 
             'post_status' => 'publish', 
-            'category_name' => 'production');
+            'category_name' => 'productions');
         $the_query = new WP_Query( $args );
     ?>
 
@@ -48,7 +48,7 @@
                                     $phrase = substr($phrase, 0, $keys[$len]);
                                 }
 
-                                echo $phrase . " ...";
+                                echo force_balance_tags($phrase) . " ...";
                             ?>
                             <p class="text-center">
                                 <a href="<?php echo e(get_permalink()); ?>" class="btn btn-default more btn-lg">More</a>
